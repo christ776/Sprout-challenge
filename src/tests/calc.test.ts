@@ -1,6 +1,6 @@
-import { Mode, resolvers } from "../app/slice"
-import { Payload } from "../utils/calcs"
+import { Mode, Payload } from "../utils/calcs"
 import { H } from "../utils/calcs"
+import resolvers from "../utils/resolvers"
 
 describe('Default Resolver starts', () => {
   it ('A && B && !C -> M', () => {

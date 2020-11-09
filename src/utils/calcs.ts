@@ -21,3 +21,9 @@ export interface Result {
 export interface Resolver {
   getResultsFor(p: Payload) : Result
 }
+
+export enum Mode {
+  Default = 'Default',
+  Custom1 = 'Custom 1',
+  Custom2 = 'Custom 2'
+}

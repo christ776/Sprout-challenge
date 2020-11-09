@@ -1,14 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { Resolver, Payload, Result } from '../utils/calcs'
-import Custom1Resolver from '../utils/custom_1'
-import Custom2Resolver from '../utils/custom_2'
-import DefaultResolver from '../utils/default'
-
-export enum Mode {
-    Default = 'Default',
-    Custom1 = 'Custom 1',
-    Custom2 = 'Custom 2'
-}
+import { Mode, Payload, Result } from '../utils/calcs'
+import resolvers from '../utils/resolvers'
 
 const initialResult: Result = { H: 0, K: 0}
 const initialPayload: Payload = {
@@ -25,14 +17,8 @@ export interface InputChange {
     value: any
 }
 
-export const resolvers: Map<Mode, Resolver> = new Map()
-resolvers.set(Mode.Default, new DefaultResolver())
-resolvers.set(Mode.Custom1, new Custom1Resolver())
-resolvers.set(Mode.Custom2, new Custom2Resolver())
-
-
 export const slice = createSlice({
-    name: 'wordsToType',
+    name: 'resolver',
     initialState: {
         result: initialResult,
         mode: Mode.Default,

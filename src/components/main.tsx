@@ -1,8 +1,8 @@
 import React, { ChangeEvent, Fragment } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { RootState } from "../app/reducers"
-import { calculationMethodDidChange, InputChange, inputDidChange, Mode } from "../app/slice"
-import { H } from "../utils/calcs"
+import { calculationMethodDidChange, InputChange, inputDidChange } from "../app/slice"
+import { H, Mode } from "../utils/calcs"
 
 const Main:React.FC = () => {
 
