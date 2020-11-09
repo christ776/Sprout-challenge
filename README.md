@@ -1,6 +1,22 @@
-# Getting Started with Create React App
+#Sprout coding challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Architecture
+I've decided to create a _standalone_ web app with no need for a backend, since there was no justification for it among the requeriments. That is, an app that has all its logic in the client side.
+
+## Programming language
+Because I had decidded to to with a web app I went with TypeScript, a superset of JS but with typings and static analysis tools that help a lot in the compile time bug checking
+
+By using TypeScript I made use of OOP using interfaces, classes and using Enums to make my intentions when designing the solution very clear to the reader.
+
+## Frameworks.
+
+I decided to use React 16.8. As for state management I went with Redux using redux toolkit, which is a _opinioninated, batteries included_ lib.
+
+finally, I used Jest for writing my tests.
+
+
+## Notes
+Please use the following scripts to run the project.
 
 ## Available Scripts
 
