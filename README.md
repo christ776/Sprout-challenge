@@ -1,4 +1,4 @@
-#Sprout coding challenge
+# Sprout coding challenge
 
 ## Architecture
 I've decided to create a _standalone_ web app with no need for a backend, since there was no justification for it among the requeriments. That is, an app that has all its logic in the client side.
